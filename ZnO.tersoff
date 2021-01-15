@@ -1,0 +1,25 @@
+# DATE: 2021-01-15 UNITS: metal CONTRIBUTOR: Zhufeng Hou, hou.zhufeng@gmail.com CITATION: P. Erhart, et al., J. Phys.: Condens. Matter 18 (2006) 6585-6605.
+# Tersoff parameters for various elements and mixtures
+# multiple entries can be added to this file, LAMMPS reads the ones it needs
+# these entries are in LAMMPS "metal" units:
+#   A,B = eV; lambda1,lambda2,lambda3 = 1/Angstroms; R,D = Angstroms
+#   other quantities are unitless
+
+# format of a single entry (one or more lines):
+#   element 1, element 2, element 3,
+#   m, gamma, lambda3, c, d, costheta0, n, beta, lambda2, B, R, D, lambda1, A
+
+# The following ZnO potential is from 
+# Ref.1: P. Erhart, N. Juslin, O. Goy, K. Nordlund, R. M{\"{u}}ller, and K. Albe, J. Phys.: Condens. Matter 18 (2006) 6585-6605.
+#    DOI: 10.1088/0953-8984/18/29/003 
+# Note: herein 'n' for 'Zn Zn O', 'O Zn O', 'O O Zn', 'Zn O Zn' is set to 1.0 
+# This file is converted by Zhufeng Hou, hou.zhufeng@gmail.com
+#e1  e2  e3  m      gamma      lambda3     c            d          h      n  beta   lambda2    B        Rcut      D      lambda1      A
+Zn  Zn  Zn  1.0  4.390900e-05    0.000  77.916000   0.913440  -1.000000 1.0 1.0   1.796516  115.159    2.850    0.200   3.261395  2258.7309
+O   O   O   1.0  8.259500e-01    0.000   0.035608   0.046496  -0.450560 1.0 1.0   2.773286  527.651    2.450    0.200   3.844884  1388.0816
+Zn  Zn  O   1.0  1.933500e-02    0.000   0.014108   0.084028  -0.305450 1.0 0.0   0.000000    0.000    2.600    0.200   0.000000     0.0000
+Zn  O   O   1.0  1.933500e-02    0.000   0.014108   0.084028  -0.305450 1.0 1.0   2.513642 6304.328    2.600    0.200   2.628013  7344.2394
+O   Zn  Zn  1.0  1.933500e-02    0.000   0.014108   0.084028  -0.305450 1.0 1.0   2.513642 6304.328    2.600    0.200   2.628013  7344.2394
+O   Zn  O   1.0  8.259500e-01    0.000   0.035608   0.046496  -0.450560 1.0 0.0   0.000000    0.000    2.450    0.200   0.000000     0.0000
+O   O   Zn  1.0  1.933500e-02    0.000   0.014108   0.084028  -0.305450 1.0 0.0   0.000000    0.000    2.600    0.200   0.000000     0.0000
+Zn  O   Zn  1.0  4.390900e-05    0.000  77.916000   0.913440  -1.000000 1.0 0.0   0.000000    0.000    2.850    0.200   0.000000     0.0000
