@@ -16,7 +16,7 @@
 # Ref.2: M.V.G. Petisme, M.A. Gren, G. Wahnstr\"{o}m}, Int. J. Refract. Hard Met, 49, 75--80(2015).
 #    DOI: 10.1016/j.ijrmhm.2014.07.037 
 # Note: there is a typo for the "beta" value of C-C in Table 1 of Ref. 2, which is inconsistent with the one in Ref. 1.
-# This file is from Zhufeng Hou, hou.zhufeng@gmail.com
+# This file is converted by Zhufeng Hou, hou.zhufeng@gmail.com
 #e1  e2  e3  m      gamma      lambda3     c            d          h      n  beta   lambda2    B        Rcut      D      lambda1      A
 W   W   W   1.0  1.882270e-03    0.459   2.149690   0.171260   0.277800 1.0 1.0   1.411246  306.500    3.500    0.300   2.719584  3401.4744
 C   C   C   1.0  2.081300e-04    0.000 330.000000   3.500000  -1.000000 1.0 1.0   2.688774 1397.073    1.850    0.150   3.280305  2605.8416
