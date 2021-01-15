@@ -1,0 +1,25 @@
+# DATE: 2021-01-15 UNITS: metal CONTRIBUTOR: Zhufeng Hou, hou.zhufeng@gmail.com CITATION: K. Albe, et al, Phys. Rev. B 65, 195124(2002).
+# Tersoff parameters for various elements and mixtures
+# multiple entries can be added to this file, LAMMPS reads the ones it needs
+# these entries are in LAMMPS "metal" units:
+#   A,B = eV; lambda1,lambda2,lambda3 = 1/Angstroms; R,D = Angstroms
+#   other quantities are unitless
+
+# format of a single entry (one or more lines):
+#   element 1, element 2, element 3,
+#   m, gamma, lambda3, c, d, costheta0, n, beta, lambda2, B, R, D, lambda1, A
+
+# The following WC potential is from 
+# Ref.1: K. Albe, K. Nordlund, and R. S. Averback, Phys. Rev. B 65, 195124(2002), 
+#    DOI: 10.1103/PhysRevB.65.195124 
+# Note: herein 'n' for 'Pt Pt C', 'C Pt C', 'C C Pt', 'Pt C Pt' is set to 1.0 
+# This file is from Zhufeng Hou, hou.zhufeng@gmail.com
+#e1  e2  e3  m      gamma      lambda3     c            d          h      n  beta   lambda2    B        Rcut      D      lambda1      A
+Pt  Pt  Pt  1.0  8.542000e-04    2.670  34.000000   1.100000  -1.000000 1.0 1.0   1.550979  268.153    3.100    0.200   3.478800 11845.2618
+C   C   C   1.0  2.081300e-04    0.000   1.230000   0.360000  -1.000000 1.0 1.0   2.373730 2544.943    2.650    0.150   2.840168  5017.6087
+Pt  Pt  C   1.0  9.700000e-03    0.000 330.000000   3.500000  -1.000000 1.0 0.0   0.000000    0.000    1.850    0.150   0.000000     0.0000
+Pt  C   C   1.0  9.700000e-03    0.000 330.000000   3.500000  -1.000000 1.0 1.0   2.688774 1397.073    1.850    0.150   3.280305  2605.8416
+C   Pt  Pt  1.0  9.700000e-03    0.000 330.000000   3.500000  -1.000000 1.0 1.0   2.688774 1397.073    1.850    0.150   3.280305  2605.8416
+C   Pt  C   1.0  2.081300e-04    0.000   1.230000   0.360000  -1.000000 1.0 0.0   0.000000    0.000    2.650    0.150   0.000000     0.0000
+C   C   Pt  1.0  9.700000e-03    0.000 330.000000   3.500000  -1.000000 1.0 0.0   0.000000    0.000    1.850    0.150   0.000000     0.0000
+Pt  C   Pt  1.0  8.542000e-04    2.670  34.000000   1.100000  -1.000000 1.0 0.0   0.000000    0.000    3.100    0.200   0.000000     0.0000
