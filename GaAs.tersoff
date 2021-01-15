@@ -9,7 +9,7 @@
 #   element 1, element 2, element 3,
 #   m, gamma, lambda3, c, d, costheta0, n, beta, lambda2, B, R, D, lambda1, A
 
-# The following WC potential is from 
+# The following GaAs potential is from 
 # Ref.1: K. Albe, K. Nordlund, J. Nord, and A. Kuronen, Phys. Rev. B 66, 035205(2002), 
 #    DOI: 10.1103/PhysRevB.66.035205 
 # Note: herein 'n' for 'Ga Ga As', 'As Ga As', 'As As Ga', 'Ga As Ga' is set to 1.0 
