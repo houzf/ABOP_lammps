@@ -1,0 +1,25 @@
+# DATE: 2021-01-15 UNITS: metal CONTRIBUTOR: Zhufeng Hou, hou.zhufeng@gmail.com CITATION: K. Albe, et al, Phys. Rev. B 66, 035205(2002).
+# Tersoff parameters for various elements and mixtures
+# multiple entries can be added to this file, LAMMPS reads the ones it needs
+# these entries are in LAMMPS "metal" units:
+#   A,B = eV; lambda1,lambda2,lambda3 = 1/Angstroms; R,D = Angstroms
+#   other quantities are unitless
+
+# format of a single entry (one or more lines):
+#   element 1, element 2, element 3,
+#   m, gamma, lambda3, c, d, costheta0, n, beta, lambda2, B, R, D, lambda1, A
+
+# The following WC potential is from 
+# Ref.1: K. Albe, K. Nordlund, J. Nord, and A. Kuronen, Phys. Rev. B 66, 035205(2002), 
+#    DOI: 10.1103/PhysRevB.66.035205 
+# Note: herein 'n' for 'Ga Ga As', 'As Ga As', 'As As Ga', 'Ga As Ga' is set to 1.0 
+# This file is from Zhufeng Hou, hou.zhufeng@gmail.com
+#e1  e2  e3  m      gamma      lambda3     c            d          h      n  beta   lambda2    B        Rcut      D      lambda1      A
+Ga  Ga  Ga  1.0  7.874000e-03    1.846   1.918000   0.750000  -0.301300 1.0 1.0   1.449697  410.132    2.950    0.150   1.609164   535.1993
+As  As  As  1.0  4.550000e-01    3.161   0.118600   0.161200  -0.077480 1.0 1.0   1.488026  194.902    3.400    0.200   2.767728  1539.6266
+Ga  Ga  As  1.0  1.660000e-02    0.000   1.290000   0.560000  -0.237000 1.0 0.0   0.000000    0.000    3.100    0.200   0.000000     0.0000
+Ga  As  As  1.0  1.660000e-02    0.000   1.290000   0.560000  -0.237000 1.0 1.0   2.015496 1929.302    3.100    0.200   2.301091  3306.1685
+As  Ga  Ga  1.0  1.660000e-02    0.000   1.290000   0.560000  -0.237000 1.0 1.0   2.015496 1929.302    3.100    0.200   2.301091  3306.1685
+As  Ga  As  1.0  4.550000e-01    3.161   0.118600   0.161200  -0.077480 1.0 0.0   0.000000    0.000    3.400    0.200   0.000000     0.0000
+As  As  Ga  1.0  1.660000e-02    0.000   1.290000   0.560000  -0.237000 1.0 0.0   0.000000    0.000    3.100    0.200   0.000000     0.0000
+Ga  As  Ga  1.0  7.874000e-03    1.846   1.918000   0.750000  -0.301300 1.0 0.0   0.000000    0.000    2.950    0.150   0.000000     0.0000
