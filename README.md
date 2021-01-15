@@ -13,7 +13,7 @@ Ref.2: M.V.G. Petisme, M.A. Gren, G. Wahnstr\"{o}m}, *Int. J. Refract. Hard Met.
 # Ga-N
 The GaN potential is taken from 
 
-Ref.3: Nord, Albe, Erhart and Nordlund, *J. Phys. Condens Matter*, **15**, 5649 (2003); DOI: [10.1103/PhysRevB.66.035205](https://doi.org/10.1103/physrevb.66.035205).
+Ref.3: Nord, Albe, Erhart and Nordlund, *J. Phys. Condens Matter*, **15**, 5649 (2003); DOI: [10.1103/PhysRevB.66.035205](https://doi.org/10.1088/0953-8984/15/32/324).
 
 Source 1: [provided by openKIM](https://www.ctcms.nist.gov/potentials/Download/2003--Nord-J-Albe-K-Erhart-P-Nordlund-K--Ga-N/1/2003_GaN.tersoff). In this file, the **n** values of 'Ga Ga N', 'N Ga N', 'N N Ga', 'Ga N Ga' are set to **0.0**.
 
