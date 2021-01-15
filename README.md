@@ -34,6 +34,6 @@ The ZnO potential is taken from
 
 Ref. 5: P. Erhart, N. Juslin, O. Goy, K. Nordlund, R. M{\"{u}}ller, and K. Albe, *J. Phys.: Condens. Matter* **18** (2006) 6585-6605; DOI: [10.1088/0953-8984/18/29/003](http://dx.doi.org/10.1088/0953-8984/18/29/003).
 
-Source 1: [provided by openKIM](https://openkim.org/files/MO_616776018688_002/Tersoff_ErhartJuslinGoy_2006_ZnO.params).
+Source 1: [provided by openKIM](https://openkim.org/files/MO_616776018688_002/Tersoff_ErhartJuslinGoy_2006_ZnO.params). In this file, the **n** values of 'Zn Zn O', 'O Zn O', 'O O Zn', 'Zn O Zn' are set to **0.0**.
 
 **Note**: some discussions about the reliablity of this Zn-O potential can be found on the [forum of lammps](https://lammps.sandia.gov/threads/msg49926.html).
