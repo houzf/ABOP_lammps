@@ -29,4 +29,9 @@ Ref. 4: K. Albe, K. Nordlund, J. Nord, and A. Kuronen, *Phys. Rev. B* **66**, 03
 
 Source 1: [provided by openKIM](https://www.ctcms.nist.gov/potentials/Download/2002--Albe-K-Nordlund-K-Nord-J-Kuronen-A--Ga-As/1/2002_GaAs.tersoff). In this file, the **n** values of 'Ga Ga As', 'As Ga As', 'As As Ga', 'Ga As Ga' are set to **0.0**.
 
+# Zn-O
+The ZnO potential is taken from 
 
+Ref. 5: P. Erhart, N. Juslin, O. Goy, K. Nordlund, R. M{\"{u}}ller, and K. Albe, *J. Phys.: Condens. Matter* **18** (2006) 6585-6605; DOI: [10.1088/0953-8984/18/29/003](http://dx.doi.org/10.1088/0953-8984/18/29/003).
+
+Note: some discussions about the reliablity of this Zn-O potential can be found on the [forum of lammps](https://lammps.sandia.gov/threads/msg49926.html).
