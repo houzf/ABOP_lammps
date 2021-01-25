@@ -48,4 +48,9 @@ The PtC potential is taken from
 
 Ref. 7: K. Albe, K. Nordlund, and R. S. Averback, *Phys. Rev. B* **65** (2002)195124; DOI: [10.1103/physrevb.65.195124](https://doi.org/10.1103/physrevb.65.195124).
 
+# Ti-Al-C
+The Ti-Al-C potential for Ti3AlC2 MAX Phase and Ti-Si-C poential for Ti3SiC2 MAX Phase are taken from 
+
+Ref. 8: G. Plummer and G. J. Tucker, *Phys. Rev. B* **100** (2019)214114; DOI: [10.1103/PhysRevB.100.214114](https://doi.org/10.1103/PhysRevB.100.214114).
+
 
