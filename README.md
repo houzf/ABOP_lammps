@@ -132,3 +132,8 @@ Ref. 14:  M. M\"{u}ller, P. Erhart and K. Albe, *J. Phys.: Condens. Matter*, **1
 The Mo-Er potential is taken from 
 
 Ref. 15:  Q. Q. Sun, T. Yang, L. Yang, S. M. Peng, X. G. Long, X. S. Zhou, X. T. Zu, and F. Gao, *Modelling Simul. Mater. Sci. Eng.*, **24**, 045018(2016); DOI: [10.1088/0965-0393/24/4/045018](http://dx.doi.org/10.1088/0965-0393/24/4/045018).
+
+# Si & Ge
+The Si and Ge potentials are taken from 
+
+Ref. 16:  Brian Andrew Gillespie, *Bond Order Potentials for Group IV Semiconductors*, University of Virginia, 2009; URL: [https://www2.virginia.edu/ms/research/wadley/Thesis/BGillespiePhD.pdf](https://www2.virginia.edu/ms/research/wadley/Thesis/BGillespiePhD.pdf).
