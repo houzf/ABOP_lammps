@@ -12,7 +12,7 @@
 # The following W potential is from 
 # Ref.1: T. Ahlgren, K. Heinola, N. Juslin, and A. Kuronen, J. Appl. Phys. 107, 033516(2010). 
 #    DOI: 10.1063/1.3298466
-# The  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential was used jointly with ABOP:
+# The universal repulsive Ziegler-Biersack-Littmark (ZBL) potential was used jointly with ABOP:
 # V'_ij = F(r_ij)*V_ij + [1-F(r_ij)]*V_ZBL
 # F(r_ij) is Fermi function, i.e., 1/[1+exp(-b_f*(r_ij -r_f))]
 # b_f = 12.0 for W-W.
