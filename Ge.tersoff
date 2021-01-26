@@ -1,0 +1,16 @@
+# DATE: 2021-01-26 UNITS: metal CONTRIBUTOR: Zhufeng Hou, hou.zhufeng@gmail.com CITATION: B. A. Gillespie, Bond oder potentials for group IV semiconductors.
+# Tersoff parameters for various elements and mixtures
+# multiple entries can be added to this file, LAMMPS reads the ones it needs
+# these entries are in LAMMPS "metal" units:
+#   A,B = eV; lambda1,lambda2,lambda3 = 1/Angstroms; R,D = Angstroms
+#   other quantities are unitless
+
+# format of a single entry (one or more lines):
+#   element 1, element 2, element 3,
+#   m, gamma, lambda3, c, d, costheta0, n, beta, lambda2, B, R, D, lambda1, A
+
+# The following Ge potential is from 
+# Ref.1: B. A. Gillespie, Bond oder potentials for group IV semiconductors. 
+#   https://www2.virginia.edu/ms/research/wadley/Thesis/BGillespiePhD.pdf 
+#e1 e2  e3   m      gamma      lambda3     c          d          h      n        beta      lambda2    B        Rcut      D      lambda1      A
+Ge  Ge  Ge  1.0    1.000       0.000   1.0643e+5    15.652   -0.43884  0.75627  9.0166e-7  1.7047   419.23     2.95     0.15    2.4451     1769
