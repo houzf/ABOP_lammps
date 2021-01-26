@@ -69,3 +69,17 @@ b_f = 15.0, 12.0, 15.0  for Be-Be, O-O, Be-O, respectively.
 r_f = 0.8, 0.5, 0.8  for Be-Be, O-O, Be-O, respectively.
 
 
+# Be-C
+The Be-C potential is taken from 
+
+Ref. 10: C. Bj\"{o}rkas, N. Juslin, H. Timko, K. V\"{o}rtler, K. Nordlund, K. Henriksson, and P. Erhart, *J. Phys.: Condens. Matter*, **21**, 445002(2009); DO: [10.1088/0953-8984/21/44/445002](http://dx.doi.org/10.1088/0953-8984/21/44/445002).
+
+To describe repulsive short-range interactions more accurately,  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential V_ZBL (r_ij) is used jointly with the original potential V_ij.
+
+V'_ij = F(r_ij)*V_ij + [1-F(r_ij)]*V_ZBL
+
+F(r_ij) is Fermi function, i.e., 1/[1+exp(-b_f*(r_ij -r_f))]
+
+b_f = 15.0, 8.0, 16.0  for Be-Be, C-C, Be-C, respectively.
+
+r_f = 0.8, 0.6, 0.7 for Be-Be, C-C, Be-C, respectively.
