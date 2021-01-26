@@ -9,7 +9,7 @@
 #   element 1, element 2, element 3,
 #   m, gamma, lambda3, c, d, costheta0, n, beta, lambda2, B, R, D, lambda1, A
 
-# The following ZnO potential is from 
+# The following Au potential is from 
 # Ref.1: M. Backman, N. Juslin, and K. Nordlund, Eur. Phys. J. B 85(2012)317.
 #    DOI: 10.1140/epjb/e2012-30429-y
 # This file is converted by Zhufeng Hou, hou.zhufeng@gmail.com
