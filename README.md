@@ -56,4 +56,10 @@ Ref. 8: G. Plummer and G. J. Tucker, *Phys. Rev. B* **100** (2019)214114; DOI: [
 # Be-O
 The Be-O potential is taken from 
 
-Ref.9: J. Byggm\"{a}star, E. A. Hodille, Y. Ferro, and K. Nordlund, *J. Phys.: Condens. Matter*, **30**, 135001(2018); DO: [10.1088/1361-648X/aaafb3](https://doi.org/10.1088/1361-648X/aaafb3).
+Ref. 9: J. Byggm\"{a}star, E. A. Hodille, Y. Ferro, and K. Nordlund, *J. Phys.: Condens. Matter*, **30**, 135001(2018); DO: [10.1088/1361-648X/aaafb3](https://doi.org/10.1088/1361-648X/aaafb3).
+
+To describe repulsive short-range interactions more accurately,  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential V_ZBL (r_ij) is used jointly with the original potential V_ij
+$$
+\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
+$$
+
