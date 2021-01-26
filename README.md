@@ -127,3 +127,8 @@ F(r<sub>ij</sub>) is Fermi function, i.e., 1/[1+exp(-b<sub>f</sub> (r<sub>ij</su
 The Fe potential is taken from 
 
 Ref. 14:  M. M\"{u}ller, P. Erhart and K. Albe, *J. Phys.: Condens. Matter*, **19**, 326220(2007); DOI: [10.1088/0953-8984/19/32/326220](http://dx.doi.org/10.1088/0953-8984/19/32/326220).
+
+# Mo-Er
+The Mo-Er potential is taken from 
+
+Ref. 15:  Q. Q. Sun, T. Yang, L. Yang, S. M. Peng, X. G. Long, X. S. Zhou, X. T. Zu, and F. Gao, *Modelling Simul. Mater. Sci. Eng.*, **24**, 045018(2016); DOI: [10.1088/0965-0393/24/4/045018](http://dx.doi.org/10.1088/0965-0393/24/4/045018).
