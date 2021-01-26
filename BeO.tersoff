@@ -1,0 +1,30 @@
+# DATE: 2021-01-26 UNITS: metal CONTRIBUTOR: Zhufeng Hou, hou.zhufeng@gmail.com CITATION: J Byggm\"{a}star, et al., J. Phys.: Condens. Matter 30 (2018) 135001.
+# Tersoff parameters for various elements and mixtures
+# multiple entries can be added to this file, LAMMPS reads the ones it needs
+# these entries are in LAMMPS "metal" units:
+#   A,B = eV; lambda1,lambda2,lambda3 = 1/Angstroms; R,D = Angstroms
+#   other quantities are unitless
+
+# format of a single entry (one or more lines):
+#   element 1, element 2, element 3,
+#   m, gamma, lambda3, c, d, costheta0, n, beta, lambda2, B, R, D, lambda1, A
+
+# The following ZnO potential is from 
+# Ref.1: J. Byggm\"{a}star, E. A. Hodille, Y. Ferro, and K. Nordlund, J. Phys.: Condens. Matter 30 (2018)135001. 
+#    DOI: 10.1088/1361-648X/aaafb3 
+# The  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential was used jointly with ABOP:
+# V'_ij = F(r_ij)*V_ij + [1-F(r_ij)]*V_ZBL
+# F(r_ij) is Fermi function, i.e., 1/[1+exp(-b_f*(r_ij -r_f))]
+# b_f = 15.0, 12.0, 15.0  for Be-Be, O-O, Be-O, respectively.
+# r_f = 0.8, 0.5, 0.8  for Be-Be, O-O, Be-O, respectively.
+# Note: herein 'n' for 'Be Be O', 'O Be O', 'O O Be', 'Be O Be' is set to 1.0 
+# This file is converted by Zhufeng Hou, hou.zhufeng@gmail.com
+#e1  e2  e3  m      gamma      lambda3     c            d          h      n  beta   lambda2    B        Rcut      D      lambda1      A
+Be  Be  Be  1.0  8.195870e-07    0.000  89.389400   0.274430  -0.760693 1.0 1.0   1.337359   35.460    2.535    0.150   2.527369   222.6758
+O   O   O   1.0  8.259500e-01    0.000   0.035608   0.046496  -0.450560 1.0 1.0   2.773286  527.651    2.100    0.200   3.844884  1388.0816
+Be  Be  O   1.0  3.940568e-01    0.000   1.400000   0.821000  -0.488000 1.0 0.0   0.000000    0.000    2.500    0.200   0.000000     0.0000
+Be  O   O   1.0  3.940568e-01    0.000   1.400000   0.821000  -0.488000 1.0 1.0   1.706513  161.176    2.500    0.200   3.200394   706.3064
+O   Be  Be  1.0  3.940568e-01    0.000   1.400000   0.821000  -0.488000 1.0 1.0   1.706513  161.176    2.500    0.200   3.200394   706.3064
+O   Be  O   1.0  8.259500e-01    0.000   0.035608   0.046496  -0.450560 1.0 0.0   0.000000    0.000    2.100    0.200   0.000000     0.0000
+O   O   Be  1.0  3.940568e-01    0.000   1.400000   0.821000  -0.488000 1.0 0.0   0.000000    0.000    2.500    0.200   0.000000     0.0000
+Be  O   Be  1.0  8.195870e-07    0.000  89.389400   0.274430  -0.760693 1.0 0.0   0.000000    0.000    2.535    0.150   0.000000     0.0000
