@@ -53,4 +53,7 @@ The Ti-Al-C potential for Ti3AlC2 MAX Phase and Ti-Si-C poential for Ti3SiC2 MAX
 
 Ref. 8: G. Plummer and G. J. Tucker, *Phys. Rev. B* **100** (2019)214114; DOI: [10.1103/PhysRevB.100.214114](https://doi.org/10.1103/PhysRevB.100.214114).
 
+# Be-O
+The Be-O potential is taken from 
 
+Ref.9: J. Byggm\"{a}star, E. A. Hodille, Y. Ferro, and K. Nordlund, *J. Phys.: Condens. Matter*, **30**, 135001(2018); DO: [10.1088/1361-648X/aaafb3](https://doi.org/10.1088/1361-648X/aaafb3).
