@@ -86,4 +86,22 @@ F(r<sub>ij</sub>) is Fermi function, i.e., 1/[1+exp(-b<sub>f</sub> (r<sub>ij</su
 | b<sub>f</sub> | 15.0  | 8.0  | 16.0 |
 | r<sub>f</sub> |  0.8  | 0.6  | 0.7  |
 
+# W-N & W
+The W-N potential is taken from 
 
+Ref. 11:  J. Polvi, K. Heinola, and K. Nordlund, *Modelling Simul. Mater. Sci. Eng.*, **24**, 065007(2016); DOI: [10.1088/0965-0393/24/6/065007](http://dx.doi.org/10.1088/0965-0393/24/6/065007).
+
+To describe repulsive short-range interactions more accurately,  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential V<sub>ZBL</sub> (r<sub>ij</sub>) is used jointly with the original potential V<sub>ij</sub>.
+
+V'<sub>ij</sub> = F(r<sub>ij</sub>) V<sub>ij</sub> + [1-F(r<sub>ij</sub>)] V<sub>ZBL</sub>
+
+F(r<sub>ij</sub>) is Fermi function, i.e., 1/[1+exp(-b<sub>f</sub> (r<sub>ij</sub> -r<sub>f</sub>))]
+
+|  Parameters   | W-W | N-N  | W-N |
+| :-----------: | :---: | :--: | :--: |
+| b<sub>f</sub> | 12.0  | 12.0  | 12.0 |
+| r<sub>f</sub> |  1.3  | 0.5  | 0.4  |
+
+The parameters for W-W are taken from 
+
+Ref. 12: T. Ahlgren, K. Heinola, N. Juslin, and A. Kuronen, *J. Appl. Phys.* **107**, 033516(2010); DOI:[10.1063/1.3298466](http://dx.doi.org/10.1063/1.3298466).
