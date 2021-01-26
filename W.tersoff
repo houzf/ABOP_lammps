@@ -1,0 +1,21 @@
+# DATE: 2021-01-26 UNITS: metal CONTRIBUTOR: Zhufeng Hou, hou.zhufeng@gmail.com CITATION: T. Ahlgren, et al., J. Appl. Phys. 107, 033516(2010).
+# Tersoff parameters for various elements and mixtures
+# multiple entries can be added to this file, LAMMPS reads the ones it needs
+# these entries are in LAMMPS "metal" units:
+#   A,B = eV; lambda1,lambda2,lambda3 = 1/Angstroms; R,D = Angstroms
+#   other quantities are unitless
+
+# format of a single entry (one or more lines):
+#   element 1, element 2, element 3,
+#   m, gamma, lambda3, c, d, costheta0, n, beta, lambda2, B, R, D, lambda1, A
+
+# The following W potential is from 
+# Ref.1: T. Ahlgren, K. Heinola, N. Juslin, and A. Kuronen, J. Appl. Phys. 107, 033516(2010). 
+#    DOI: 10.1063/1.3298466
+# The  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential was used jointly with ABOP:
+# V'_ij = F(r_ij)*V_ij + [1-F(r_ij)]*V_ZBL
+# F(r_ij) is Fermi function, i.e., 1/[1+exp(-b_f*(r_ij -r_f))]
+# b_f = 12.0 for W-W.
+# r_f = 1.3 for W-W.
+#e1  e2  e3  m      gamma      lambda3     c            d          h      n  beta   lambda2    B        Rcut      D        lambda1      A
+W   W   W   1.0  1.293884e-03    0.000   1.327324   0.135096   0.352000 1.0 1.0   1.304692  148.328    4.400    0.840189   2.890383  3313.9454
