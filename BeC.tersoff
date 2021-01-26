@@ -12,7 +12,7 @@
 # The following BeC potential is from 
 # Ref.1: C. Bj\"{o}rkas, N. Juslin, H. Timko, K. V\"{o}rtler, K. Nordlund, K. Henriksson, and P. Erhart, J. Phys.: Condens. Matter 21 (2009)445002. 
 #    DOI: 10.1088/0953-8984/21/44/445002
-# The  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential was used jointly with ABOP:
+# The universal repulsive Ziegler-Biersack-Littmark (ZBL) potential was used jointly with ABOP:
 # V'_ij = F(r_ij)*V_ij + [1-F(r_ij)]*V_ZBL
 # F(r_ij) is Fermi function, i.e., 1/[1+exp(-b_f*(r_ij -r_f))]
 # b_f = 15.0, 8.0, 16.0  for Be-Be, C-C, Be-C, respectively.
