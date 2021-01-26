@@ -1,0 +1,16 @@
+# DATE: 2021-01-26 UNITS: metal CONTRIBUTOR: Zhufeng Hou, hou.zhufeng@gmail.com CITATION: M. M\"{u}ller, et al., J. Phys.: Condens. Matter 19 (2007) 326220.
+# Tersoff parameters for various elements and mixtures
+# multiple entries can be added to this file, LAMMPS reads the ones it needs
+# these entries are in LAMMPS "metal" units:
+#   A,B = eV; lambda1,lambda2,lambda3 = 1/Angstroms; R,D = Angstroms
+#   other quantities are unitless
+
+# format of a single entry (one or more lines):
+#   element 1, element 2, element 3,
+#   m, gamma, lambda3, c, d, costheta0, n, beta, lambda2, B, R, D, lambda1, A
+
+# The following Fe potential is from 
+# Ref.1: M. M\"{u}ller, P. Erhart and K. Albe, J. Phys.: Condens. Matter 19 (2007) 326220. 
+#    DOI: 10.1088/0953-8984/19/32/326220 
+#e1  e2  e3  m      gamma      lambda3     c            d          h      n   beta   lambda2    B        Rcut      D        lambda1      A
+Fe  Fe  Fe  1.0  1.15751e-02    0.000   1.2898716   0.3413219  0.260000  1.0  1.0    1.376354  67.86477  3.150    0.200    2.8481044   953.948592
