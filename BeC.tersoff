@@ -1,0 +1,29 @@
+# DATE: 2021-01-26 UNITS: metal CONTRIBUTOR: Zhufeng Hou, hou.zhufeng@gmail.com CITATION: C. Bj\"{o}rkas, et al., J. Phys.: Condens. Matter 21 (2009) 445002.
+# Tersoff parameters for various elements and mixtures
+# multiple entries can be added to this file, LAMMPS reads the ones it needs
+# these entries are in LAMMPS "metal" units:
+#   A,B = eV; lambda1,lambda2,lambda3 = 1/Angstroms; R,D = Angstroms
+#   other quantities are unitless
+
+# format of a single entry (one or more lines):
+#   element 1, element 2, element 3,
+#   m, gamma, lambda3, c, d, costheta0, n, beta, lambda2, B, R, D, lambda1, A
+
+# The following BeC potential is from 
+# Ref.1: C. Bj\"{o}rkas, N. Juslin, H. Timko, K. V\"{o}rtler, K. Nordlund, K. Henriksson, and P. Erhart, J. Phys.: Condens. Matter 21 (2009)445002. 
+#    DOI: 10.1088/0953-8984/21/44/445002
+# The  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential was used jointly with ABOP:
+# V'_ij = F(r_ij)*V_ij + [1-F(r_ij)]*V_ZBL
+# F(r_ij) is Fermi function, i.e., 1/[1+exp(-b_f*(r_ij -r_f))]
+# b_f = 15.0, 8.0, 16.0  for Be-Be, C-C, Be-C, respectively.
+# r_f = 0.8, 0.6, 0.7  for Be-Be, C-C, Be-C, respectively.
+# Note: herein 'n' for 'Be Be C', 'C Be C', 'C C Be', 'Be C Be' is set to 1.0 
+#e1  e2  e3  m      gamma      lambda3     c            d          h      n  beta   lambda2    B        Rcut      D      lambda1      A
+Be  Be  Be  1.0  8.195870e-07    0.000  89.389400   0.274430  -0.760693 1.0 1.0   1.337359   35.460    2.535    0.150   2.527369   222.6758
+C   C   C   1.0  2.081300e-04    0.000 330.000000   3.500000  -1.000000 1.0 1.0   2.956372 2026.559    1.850    0.150   3.606773  4102.2960
+Be  Be  C   1.0  3.001840e-05    0.000  57.004094   0.358304  -0.559996 1.0 0.0   0.000000    0.000    2.600    0.200   0.000000     0.0000
+Be  C   C   1.0  3.001840e-05    0.000  57.004094   0.358304  -0.559996 1.0 1.0   1.404991   69.029    2.600    0.200   3.887222  1802.5785
+C   Be  Be  1.0  3.001840e-05    0.000  57.004094   0.358304  -0.559996 1.0 1.0   1.404991   69.029    2.600    0.200   3.887222  1802.5785
+C   Be  C   1.0  2.081300e-04    0.000 330.000000   3.500000  -1.000000 1.0 0.0   0.000000    0.000    1.850    0.150   0.000000     0.0000
+C   C   Be  1.0  3.001840e-05    0.000  57.004094   0.358304  -0.559996 1.0 0.0   0.000000    0.000    2.600    0.200   0.000000     0.0000
+Be  C   Be  1.0  8.195870e-07    0.000  89.389400   0.274430  -0.760693 1.0 0.0   0.000000    0.000    2.535    0.150   0.000000     0.0000
