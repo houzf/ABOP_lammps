@@ -9,7 +9,7 @@
 #   element 1, element 2, element 3,
 #   m, gamma, lambda3, c, d, costheta0, n, beta, lambda2, B, R, D, lambda1, A
 
-# The following WC potential is from 
+# The following PtC potential is from 
 # Ref.1: K. Albe, K. Nordlund, and R. S. Averback, Phys. Rev. B 65, 195124(2002), 
 #    DOI: 10.1103/PhysRevB.65.195124 
 # Note: herein 'n' for 'Pt Pt C', 'C Pt C', 'C C Pt', 'Pt C Pt' is set to 1.0 
