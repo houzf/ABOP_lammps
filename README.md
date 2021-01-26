@@ -106,7 +106,24 @@ The parameters for W-W are taken from
 
 Ref. 12: T. Ahlgren, K. Heinola, N. Juslin, and A. Kuronen, *J. Appl. Phys.* **107**, 033516(2010); DOI:[10.1063/1.3298466](http://dx.doi.org/10.1063/1.3298466).
 
+
+# Be-W
+The Be-W potential is taken from 
+
+Ref. 13: C. Bj\"{o}rkas, K. O. E. Henriksson, M. Probst, and K. Nordlund, *J. Phys.: Condens. Matter*, **22**, 352206(2010); DOI: [10.1088/0953-8984/22/35/352206](http://dx.doi.org/10.1088/0953-8984/22/35/352206).
+
+To describe repulsive short-range interactions more accurately,  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential V<sub>ZBL</sub> (r<sub>ij</sub>) is used jointly with the original potential V<sub>ij</sub>.
+
+V'<sub>ij</sub> = F(r<sub>ij</sub>) V<sub>ij</sub> + [1-F(r<sub>ij</sub>)] V<sub>ZBL</sub>
+
+F(r<sub>ij</sub>) is Fermi function, i.e., 1/[1+exp(-b<sub>f</sub> (r<sub>ij</sub> -r<sub>f</sub>))]
+
+|  Parameters   | Be-Be | W-W  | Be-W |
+| :-----------: | :---: | :--: | :--: |
+| b<sub>f</sub> | 15.0  | 12.0  | 13.0 |
+| r<sub>f</sub> |  0.8  | 1.3  | 1.3  |
+
 # Fe
 The Fe potential is taken from 
 
-Ref. 13:  M. M\"{u}ller, P. Erhart and K. Albe, *J. Phys.: Condens. Matter*, **19**, 326220(2007); DOI: [10.1088/0953-8984/19/32/326220](http://dx.doi.org/10.1088/0953-8984/19/32/326220).
+Ref. 14:  M. M\"{u}ller, P. Erhart and K. Albe, *J. Phys.: Condens. Matter*, **19**, 326220(2007); DOI: [10.1088/0953-8984/19/32/326220](http://dx.doi.org/10.1088/0953-8984/19/32/326220).
