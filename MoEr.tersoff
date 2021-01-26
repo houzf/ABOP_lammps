@@ -1,0 +1,24 @@
+# DATE: 2021-01-26 UNITS: metal CONTRIBUTOR: Zhufeng Hou, hou.zhufeng@gmail.com CITATION: Q. Q. Sun, et al., Modelling Simul. Mater. Sci. Eng. 24 (2016) 045018.
+# Tersoff parameters for various elements and mixtures
+# multiple entries can be added to this file, LAMMPS reads the ones it needs
+# these entries are in LAMMPS "metal" units:
+#   A,B = eV; lambda1,lambda2,lambda3 = 1/Angstroms; R,D = Angstroms
+#   other quantities are unitless
+
+# format of a single entry (one or more lines):
+#   element 1, element 2, element 3,
+#   m, gamma, lambda3, c, d, costheta0, n, beta, lambda2, B, R, D, lambda1, A
+
+# The following MoEr potential is from 
+# Ref.1: Q. Q. Sun, T. Yang, L. Yang, S. M. Peng, X. G. Long, X. S. Zhou, X. T. Zu, and F. Gao,  Modelling Simul. Mater. Sci. Eng. 24 (2016) 045018. 
+#    DOI: 10.1088/0965-0393/24/4/045018 
+# Note: herein 'n' for 'Mo Mo Er', 'Er Mo Er', 'Er Er Mo', 'Mo Er Mo' is set to 1.0 
+#e1  e2  e3  m      gamma      lambda3     c            d          h      n  beta   lambda2    B        Rcut      D      lambda1      A
+Mo  Mo  Mo  1.0  1.245720e-03  2.09348  7.583808   0.285989  -0.185624 1.0 1.0   0.491885   13.497    3.465    0.369   4.224012 24161.6200
+Er  Er  Er  1.0  1.615438e-03  1.488349 0.632119   0.074886  -0.176604 1.0 1.0   1.105624   91.420    4.206    0.158   1.902635   390.2178
+Mo  Mo  Er  1.0  1.511719e-01  0.510    0.073741   0.127005   0.472879 1.0 0.0   0.000000    0.000    5.601    0.171   0.000000     0.0000
+Mo  Er  Er  1.0  1.511719e-01  0.000    0.073741   0.127005   0.472879 1.0 1.0   0.791770   23.527    5.601    0.171   2.262824   892.9185
+Er  Mo  Mo  1.0  1.511719e-01  0.000    0.073741   0.127005   0.472879 1.0 1.0   0.791770   23.527    5.601    0.171   2.262824   892.9185
+Er  Mo  Er  1.0  1.615438e-03  2.000    0.632119   0.074886  -0.176604 1.0 0.0   0.000000    0.000    4.206    0.158   0.000000     0.0000
+Er  Er  Mo  1.0  1.511719e-01  0.000    0.073741   0.127005   0.472879 1.0 0.0   0.000000    0.000    5.601    0.171   0.000000     0.0000
+Mo  Er  Mo  1.0  1.245720e-03  0.000    7.583808   0.285989  -0.185624 1.0 0.0   0.000000    0.000    3.465    0.369   0.000000     0.0000
