@@ -105,3 +105,8 @@ F(r<sub>ij</sub>) is Fermi function, i.e., 1/[1+exp(-b<sub>f</sub> (r<sub>ij</su
 The parameters for W-W are taken from 
 
 Ref. 12: T. Ahlgren, K. Heinola, N. Juslin, and A. Kuronen, *J. Appl. Phys.* **107**, 033516(2010); DOI:[10.1063/1.3298466](http://dx.doi.org/10.1063/1.3298466).
+
+# Fe
+The Fe potential is taken from 
+
+Ref. 13:  M. M\"{u}ller, P. Erhart and K. Albe, *J. Phys.: Condens. Matter*, **19**, 326220(2007); DOI: [10.1088/0953-8984/19/32/326220](http://dx.doi.org/10.1088/0953-8984/19/32/326220).
