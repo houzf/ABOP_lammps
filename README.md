@@ -28,7 +28,7 @@ where $n$ = 1, $\beta$ = 1, $m$ = 1 in Tersoff_1 format of LAMMPS.
 # W-C
 The WC potential is taken from 
 
-Ref.1: N. Juslin, P. Erhart, P. Tr\"{a}skelin, J. Nord, K. O. E. Henriksson, K. Nordlund, E. Salonen, and K. Albe, *J. Appl. Phys.*, **98**, 123520(2005); DO: [10.1063/1.2149492](https://doi.org/10.1063/1.2149492).
+Ref.1: N. Juslin, P. Erhart, P. Tr&#228;skelin, J. Nord, K. O. E. Henriksson, K. Nordlund, E. Salonen, and K. Albe, *J. Appl. Phys.*, **98**, 123520(2005); DO: [10.1063/1.2149492](https://doi.org/10.1063/1.2149492).
 
 Ref.2: M.V.G. Petisme, M.A. Gren, G. Wahnstr{\"{o}}m, *Int. J. Refract. Hard Met.*, **49**, 75--80(2015); DOI: [10.1016/j.ijrmhm.2014.07.037](https://doi.org/10.1016/j.ijrmhm.2014.07.037).
 
@@ -56,7 +56,7 @@ Source 1: [provided by openKIM](https://www.ctcms.nist.gov/potentials/Download/2
 # Zn-O
 The ZnO potential is taken from 
 
-Ref. 5: P. Erhart, N. Juslin, O. Goy, K. Nordlund, R. M{\"{u}}ller, and K. Albe, *J. Phys.: Condens. Matter* **18** (2006)6585-6605; DOI: [10.1088/0953-8984/18/29/003](http://dx.doi.org/10.1088/0953-8984/18/29/003).
+Ref. 5: P. Erhart, N. Juslin, O. Goy, K. Nordlund, R. M&#252;ller, and K. Albe, *J. Phys.: Condens. Matter* **18** (2006)6585-6605; DOI: [10.1088/0953-8984/18/29/003](http://dx.doi.org/10.1088/0953-8984/18/29/003).
 
 Source 1: [provided by openKIM](https://openkim.org/files/MO_616776018688_002/Tersoff_ErhartJuslinGoy_2006_ZnO.params). In this file, the **n** values of 'Zn Zn O', 'O Zn O', 'O O Zn', 'Zn O Zn' are set to **0.0**.
 
@@ -80,7 +80,7 @@ Ref. 8: G. Plummer and G. J. Tucker, *Phys. Rev. B* **100** (2019)214114; DOI: [
 # Be-O
 The Be-O potential is taken from 
 
-Ref. 9: J. Byggm\"{a}star, E. A. Hodille, Y. Ferro, and K. Nordlund, *J. Phys.: Condens. Matter*, **30**, 135001(2018); DOI: [10.1088/1361-648X/aaafb3](https://doi.org/10.1088/1361-648X/aaafb3).
+Ref. 9: J. Byggm&#228;star, E. A. Hodille, Y. Ferro, and K. Nordlund, *J. Phys.: Condens. Matter*, **30**, 135001(2018); DOI: [10.1088/1361-648X/aaafb3](https://doi.org/10.1088/1361-648X/aaafb3).
 
 To describe repulsive short-range interactions more accurately,  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential V<sub>ZBL</sub> (r<sub>ij</sub>) is used jointly with the original potential V<sub>ij</sub>.
 
@@ -97,7 +97,7 @@ F(r<sub>ij</sub>) is Fermi function, i.e., 1/[1+exp(-b<sub>f</sub> (r<sub>ij</su
 # Be-C
 The Be-C potential is taken from 
 
-Ref. 10: C. Bj\"{o}rkas, N. Juslin, H. Timko, K. V\"{o}rtler, K. Nordlund, K. Henriksson, and P. Erhart, *J. Phys.: Condens. Matter*, **21**, 445002(2009); DOI: [10.1088/0953-8984/21/44/445002](http://dx.doi.org/10.1088/0953-8984/21/44/445002).
+Ref. 10: C. Bj&#246;rkas, N. Juslin, H. Timko, K. V&#246;rtler, K. Nordlund, K. Henriksson, and P. Erhart, *J. Phys.: Condens. Matter*, **21**, 445002(2009); DOI: [10.1088/0953-8984/21/44/445002](http://dx.doi.org/10.1088/0953-8984/21/44/445002).
 
 To describe repulsive short-range interactions more accurately,  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential V<sub>ZBL</sub> (r<sub>ij</sub>) is used jointly with the original potential V<sub>ij</sub>.
 
@@ -134,7 +134,7 @@ Ref. 12: T. Ahlgren, K. Heinola, N. Juslin, and A. Kuronen, *J. Appl. Phys.* **1
 # Be-W
 The Be-W potential is taken from 
 
-Ref. 13: C. Bj\"{o}rkas, K. O. E. Henriksson, M. Probst, and K. Nordlund, *J. Phys.: Condens. Matter*, **22**, 352206(2010); DOI: [10.1088/0953-8984/22/35/352206](http://dx.doi.org/10.1088/0953-8984/22/35/352206).
+Ref. 13: C. Bj&#246;rkas, K. O. E. Henriksson, M. Probst, and K. Nordlund, *J. Phys.: Condens. Matter*, **22**, 352206(2010); DOI: [10.1088/0953-8984/22/35/352206](http://dx.doi.org/10.1088/0953-8984/22/35/352206).
 
 To describe repulsive short-range interactions more accurately,  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential V<sub>ZBL</sub> (r<sub>ij</sub>) is used jointly with the original potential V<sub>ij</sub>.
 
@@ -150,7 +150,7 @@ F(r<sub>ij</sub>) is Fermi function, i.e., 1/[1+exp(-b<sub>f</sub> (r<sub>ij</su
 # Fe
 The Fe potential is taken from 
 
-Ref. 14:  M. M\"{u}ller, P. Erhart and K. Albe, *J. Phys.: Condens. Matter*, **19**, 326220(2007); DOI: [10.1088/0953-8984/19/32/326220](http://dx.doi.org/10.1088/0953-8984/19/32/326220).
+Ref. 14:  M. M&#252;ller, P. Erhart and K. Albe, *J. Phys.: Condens. Matter*, **19**, 326220(2007); DOI: [10.1088/0953-8984/19/32/326220](http://dx.doi.org/10.1088/0953-8984/19/32/326220).
 
 # Mo-Er
 The Mo-Er potential is taken from 
