@@ -5,12 +5,12 @@ Collection of some analytical bond order potentials ( listed in the LAMMPS forma
 
 | Tersoff_1 in LAMMPS                                          | Analytical bond-order potential (ABOP)                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| $$E=\frac{1}{2}\sum_{i}\sum_{j\neq i}V_{ij}$$                | $$ E=\sum_{i}\sum_{j>i}V_{ij}$$                              |
+| $$E=\frac{1}{2}\sum_{i}\sum_{j\neq i}V_{ij}$$                | $$E=\sum_{i}\sum_{j>i}V_{ij}$$                              |
 | $$V_{ij}=f_\mathrm{C}(r_{ij}+\delta)[f_\mathrm{R}(r_{ij}+\delta)+b_{ij}f_\mathrm{A}(r_{ij}+\delta)]$$ | $$V_{ij}=f_\mathrm{C}(r_{ij})[V_\mathrm{R}(r_{ij})-\bar{b}_{ij}V_\mathrm{A}(r_{ij})]$$ |
 | $$f_\mathrm{C}(r)=\left\{\begin{array}{ll}1, & r <R-D \\\frac{1}{2}-\frac{1}{2}\sin\left(\frac{\pi}{2}\frac{r-R}{D}\right), & R-D<r<R+D \\0,&r>R+D\end{array} \right.$$ | $$f_\mathrm{C}(r)=\left\{\begin{array}{ll}1, & r \leq R-D \\\frac{1}{2}-\frac{1}{2}\sin\left[\frac{\pi}{2D}(r-R)\right], & |R-r|<D \\0,&r\geq R+D\end{array} \right.$$ |
 | $$f_\mathrm{R}(r)=A\exp(-\lambda_{1}r)$$                     | $$V_\mathrm{R}(r_{ij})=\frac{D_0}{S-1}\exp\left[-\beta\sqrt{2S}(r_{ij}-r_{0})\right]$$ |
 | $$f_\mathrm{A}(r)=-B\exp(-\lambda_{2}r)$$                    | $$V_\mathrm{A}(r_{ij})=\frac{SD_0}{S-1}\exp\left[-\beta\sqrt{2/S}(r_{ij}-r_{0})\right]$$ |
-| $$b_{ij}=\left(1+\beta^{n}\zeta_{ij}^{n}\right)^{-\frac{1}{2n}}$$ | $$\bar{b}_{ij}=\frac{b_{ij}+b_{ji}}{2}$$                     |
+| $b_{ij}=\left(1+\beta^{n}\zeta_{ij}^{n}\right)^{-\frac{1}{2n}}$ | $\bar{b}_{ij}=\frac{b_{ij}+b_{ji}}{2}$                    |
 |                                                              | $$b_{ij}=(1+\chi_{ij})^{-1/2}$$                              |
 | $$\zeta_{ij}=\sum_{k\neq i,j}f_\mathrm{C}(r_{ik}+\delta)g\left[\theta_{ijk}(r_{ij},r_{ik})\right]\exp\left[\lambda_{3}^{m}(r_{ij}-r_{ik})^{m}\right]$$ | $$\chi_{ij}=\sum_{k(\neq i,j)}f_\mathrm{C}(r_{ik})g_{ik}(\theta_{ijk})\omega_{ijk}\exp[\alpha_{ijk}(r_{ij}-r_{ik})]$$ |
 | $$g(\theta)=\gamma_{ijk}\left[1+\frac{c^2}{d^2}-\frac{c^2}{d^2+(\cos\theta-\cos\theta_{0})^{2}}\right]$$ | $$g_{ik}(\theta_{ijk})=\gamma_{ik}\left[1+\frac{c^2_{ik}}{d^2_{ik}}-\frac{c^2_{ik}}{d^2_{ik}+(h_{ik}+\cos\theta_{ijk})^{2}}\right]$$ |
