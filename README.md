@@ -14,7 +14,7 @@ Collection of some analytical bond order potentials ( listed in the LAMMPS forma
 |                                                              | $$b_{ij}=(1+\chi_{ij})^{-1/2}$$                              |
 | $$\zeta_{ij}=\sum_{k\neq i,j}f_\mathrm{C}(r_{ik}+\delta)g\left[\theta_{ijk}(r_{ij},r_{ik})\right]\exp\left[\lambda_{3}^{m}(r_{ij}-r_{ik})^{m}\right]$$ | $$\chi_{ij}=\sum_{k(\neq i,j)}f_\mathrm{C}(r_{ik})g_{ik}(\theta_{ijk})\omega_{ijk}\exp[\alpha_{ijk}(r_{ij}-r_{ik})]$$ |
 | $$g(\theta)=\gamma_{ijk}\left[1+\frac{c^2}{d^2}-\frac{c^2}{d^2+(\cos\theta-\cos\theta_{0})^{2}}\right]$$ | $$g_{ik}(\theta_{ijk})=\gamma_{ik}\left[1+\frac{c^2_{ik}}{d^2_{ik}}-\frac{c^2_{ik}}{d^2_{ik}+(h_{ik}+\cos\theta_{ijk})^{2}}\right]$$ |
-|   
+ 
 
 $D_0$ and $r_0$: the dimer bond energy and length.  
 
