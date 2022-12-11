@@ -16,9 +16,9 @@ Collection of some analytical bond order potentials ( listed in the LAMMPS forma
 | $$g(\theta)=\gamma_{ijk}\left[1+\frac{c^2}{d^2}-\frac{c^2}{d^2+(\cos\theta-\cos\theta_{0})^{2}}\right]$$ | $$g_{ik}(\theta_{ijk})=\gamma_{ik}\left[1+\frac{c^2_{ik}}{d^2_{ik}}-\frac{c^2_{ik}}{d^2_{ik}+(h_{ik}+\cos\theta_{ijk})^{2}}\right]$$ |
  
 
-$D_0$ and $r_0$: the dimer bond energy and length.   
+$D_0$ and $r_0$: the bond energy and length of a dimer.   
  
-$\beta$ and $S$: fitting parameters controlling the shape of the pair potential.
+$\beta$ and $S$: fitting parameters that control the shape of the pair potential.
 
 From the parameters $r_0$, $D_{0}$, $S$, $\beta$, $\alpha$, $\omega$, and $h$ given in the ABOP, we can obtain the parameters $A$, $B$, $\lambda_{1}$, $\lambda_{2}$, $\lambda_{3}$, $\gamma$, and $\cos\theta_{0}$ in the Tersoff_1 format of LAMMPS  according to the followings:
 $\lambda_{1}   =   \beta\sqrt{2S}$,  $\lambda_{2}  =  \beta\sqrt{2/S}$,  $A=\frac{D_{0}}{S-1}\exp(\lambda_{1}r_{0})$, $B = \frac{SD_{0}}{S-1}\exp(\lambda_{2}r_{0})$, $\lambda_{3}  =  \alpha$ with $m=1$,  $\cos\theta_{0}  =  -h $, $\gamma = \omega\gamma$, 
