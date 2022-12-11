@@ -6,32 +6,22 @@ Collection of some analytical bond order potentials ( listed in the LAMMPS forma
 | Tersoff_1 in LAMMPS                                          | Analytical bond-order potential (ABOP)                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | $$E=\frac{1}{2}\sum_{i}\sum_{j\neq i}V_{ij}$$                | $$E=\sum_{i}\sum_{j>i}V_{ij}$$                              |
-| $$V_{ij}=f_\mathrm{C}(r_{ij}+\delta)[f_\mathrm{R}(r_{ij}+\delta)+b_{ij}f_\mathrm{A}(r_{ij}+\delta)]$$ | $$V_{ij}=f_\mathrm{C}(r_{ij})[V_\mathrm{R}(r_{ij})-\bar{b}_{ij}V_\mathrm{A}(r_{ij})]$$ |
+| $$V_{ij}=f_\mathrm{C}(r_{ij}+\delta)[f_\mathrm{R}(r_{ij}+\delta)+b_{ij}f_\mathrm{A}(r_{ij}+\delta)]$$ | $$V_{ij}=f_\mathrm{C}(r_{ij})[V_\mathrm{R}(r_{ij})-\bar{b_{ij}}V_\mathrm{A}(r_{ij})]$$ |
 | $$f_\mathrm{C}(r)=\left\{\begin{array}{ll}1, & r <R-D \\\frac{1}{2}-\frac{1}{2}\sin\left(\frac{\pi}{2}\frac{r-R}{D}\right), & R-D<r<R+D \\0,&r>R+D\end{array} \right.$$ | $$f_\mathrm{C}(r)=\left\{\begin{array}{ll}1, & r \leq R-D \\\frac{1}{2}-\frac{1}{2}\sin\left[\frac{\pi}{2D}(r-R)\right], & |R-r|<D \\0,&r\geq R+D\end{array} \right.$$ |
 | $$f_\mathrm{R}(r)=A\exp(-\lambda_{1}r)$$                     | $$V_\mathrm{R}(r_{ij})=\frac{D_0}{S-1}\exp\left[-\beta\sqrt{2S}(r_{ij}-r_{0})\right]$$ |
 | $$f_\mathrm{A}(r)=-B\exp(-\lambda_{2}r)$$                    | $$V_\mathrm{A}(r_{ij})=\frac{SD_0}{S-1}\exp\left[-\beta\sqrt{2/S}(r_{ij}-r_{0})\right]$$ |
-| $$b_{ij}=\left(1+\beta^{n}\zeta_{ij}^{n}\right)^{-\frac{1}{2n}}$$ | $$\bar{b}_{ij}=\frac{b_{ij}+b_{ji}}{2}$$                    |
+| $$b_{ij}=\left(1+\beta^{n}\zeta_{ij}^{n}\right)^{-\frac{1}{2n}}$$ | $$\bar{b_{ij}}=\frac{b_{ij}+b_{ji}}{2}$$                    |
 |                                                              | $$b_{ij}=(1+\chi_{ij})^{-1/2}$$                              |
 | $$\zeta_{ij}=\sum_{k\neq i,j}f_\mathrm{C}(r_{ik}+\delta)g\left[\theta_{ijk}(r_{ij},r_{ik})\right]\exp\left[\lambda_{3}^{m}(r_{ij}-r_{ik})^{m}\right]$$ | $$\chi_{ij}=\sum_{k(\neq i,j)}f_\mathrm{C}(r_{ik})g_{ik}(\theta_{ijk})\omega_{ijk}\exp[\alpha_{ijk}(r_{ij}-r_{ik})]$$ |
 | $$g(\theta)=\gamma_{ijk}\left[1+\frac{c^2}{d^2}-\frac{c^2}{d^2+(\cos\theta-\cos\theta_{0})^{2}}\right]$$ | $$g_{ik}(\theta_{ijk})=\gamma_{ik}\left[1+\frac{c^2_{ik}}{d^2_{ik}}-\frac{c^2_{ik}}{d^2_{ik}+(h_{ik}+\cos\theta_{ijk})^{2}}\right]$$ |
  
 
-$D_0$ and $r_0$: the dimer bond energy and length.  
-
+$D_0$ and $r_0$: the dimer bond energy and length.   
+ 
 $\beta$ and $S$: fitting parameters controlling the shape of the pair potential.
 
 From the parameters $r_0$, $D_{0}$, $S$, $\beta$, $\alpha$, $\omega$, and $h$ given in the ABOP, we can obtain the parameters $A$, $B$, $\lambda_{1}$, $\lambda_{2}$, $\lambda_{3}$, $\gamma$, and $\cos\theta_{0}$ in the Tersoff_1 format of LAMMPS  according to the followings:
-$$
-\begin{array}{ccc}
-\lambda_{1} & = & \beta\sqrt{2S}\\
-\lambda_{2} & = & \beta\sqrt{2/S}\\
-A&=&\frac{D_{0}}{S-1}\exp(\lambda_{1}r_{0})\\
-B&=&\frac{SD_{0}}{S-1}\exp(\lambda_{2}r_{0})\\
-\lambda_{3} &=& \alpha ~~\mathrm{with~~} m=1\\
-\cos\theta_{0} &=& -h\\
-\gamma&=&\omega\gamma
-\end{array},
-$$
+$\lambda_{1}   =   \beta\sqrt{2S}$,  $\lambda_{2}  =  \beta\sqrt{2/S}$,  $A=\frac{D_{0}}{S-1}\exp(\lambda_{1}r_{0})$, $B = \frac{SD_{0}}{S-1}\exp(\lambda_{2}r_{0})$, $\lambda_{3}  =  \alpha$ with $m=1$,  $\cos\theta_{0}  =  -h $, $\gamma = \omega\gamma$, 
 where $n$ = 1, $\beta$ = 1, $m$ = 1 in Tersoff_1 format of LAMMPS.
 
 
