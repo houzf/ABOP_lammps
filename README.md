@@ -98,7 +98,7 @@ Ref. 7: K. Albe, K. Nordlund, and R. S. Averback, Modeling the metal-semiconduct
 # Ti-Al-C
 The Ti-Al-C potential for Ti<sub>3</sub>AlC<sub>2</sub> MAX Phase and Ti-Si-C poential for Ti<sub>3</sub>SiC<sub>2</sub> MAX Phase are taken from 
 
-Ref. 8: G. Plummer and G. J. Tucker, Bond-order potentials for the Ti~3~AlC~2~ and Ti~3~SiC~2~ MAX phases, *Phys. Rev. B* **100** (2019)214114; DOI: [10.1103/PhysRevB.100.214114](https://doi.org/10.1103/PhysRevB.100.214114).
+Ref. 8: G. Plummer and G. J. Tucker, Bond-order potentials for the Ti<sub>3</sub>AlC<sub>2</sub> and Ti<sub>3</sub>SiC<sub>2</sub> MAX phases, *Phys. Rev. B* **100** (2019)214114; DOI: [10.1103/PhysRevB.100.214114](https://doi.org/10.1103/PhysRevB.100.214114).
 
 # Be-O
 The Be-O potential is taken from 
