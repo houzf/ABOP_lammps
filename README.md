@@ -51,16 +51,16 @@ where $n$ = 1, $\beta$ = 1, $m$ = 1 in Tersoff_1 format of LAMMPS.
 # W-C
 The WC potential is taken from 
 
-Ref.1: N. Juslin, P. Erhart, P. Tr&#228;skelin, J. Nord, K. O. E. Henriksson, K. Nordlund, E. Salonen, and K. Albe, *J. Appl. Phys.*, **98**, 123520(2005); DO: [10.1063/1.2149492](https://doi.org/10.1063/1.2149492).
+Ref.1: N. Juslin, P. Erhart, P. Tr&#228;skelin, J. Nord, K. O. E. Henriksson, K. Nordlund, E. Salonen, and K. Albe, Analytical interatomic potential for modeling nonequilibrium processes in the W-C-H system, *J. Appl. Phys.*, **98**, 123520(2005); DO: [10.1063/1.2149492](https://doi.org/10.1063/1.2149492).
 
-Ref.2: M.V.G. Petisme, M.A. Gren, G. Wahnstr&#246;m, *Int. J. Refract. Hard Met.*, **49**, 75--80(2015); DOI: [10.1016/j.ijrmhm.2014.07.037](https://doi.org/10.1016/j.ijrmhm.2014.07.037).
+Ref.2: M.V.G. Petisme, M.A. Gren, G. Wahnstr&#246;m, Molecular dynamics simulation of WC/WC grain boundary sliding resistance in WC-Co cemented carbides at high temperature, *Int. J. Refract. Hard Met.*, **49**, 75--80(2015); DOI: [10.1016/j.ijrmhm.2014.07.037](https://doi.org/10.1016/j.ijrmhm.2014.07.037).
 
 **Note**: there is a typo for the "beta" value of C-C in Table 1 of Ref. 2, which is inconsistent with the one in Ref. 1.
 
 # Ga-N
 The GaN potential is taken from 
 
-Ref.3: J. Nord, K. Albe, P. Erhart, and K. Nordlund, *J. Phys. Condens Matter*, **15**, 5649 (2003); DOI: [10.1088/0953-8984/15/32/324](https://doi.org/10.1088/0953-8984/15/32/324).
+Ref.3: J. Nord, K. Albe, P. Erhart, and K. Nordlund, Modelling of compound semiconductors: analytical bond-order potential for gallium, nitrogen and gallium nitride, *J. Phys. Condens Matter*, **15**, 5649 (2003); DOI: [10.1088/0953-8984/15/32/324](https://doi.org/10.1088/0953-8984/15/32/324).
 
 Source 1: [provided by openKIM](https://www.ctcms.nist.gov/potentials/Download/2003--Nord-J-Albe-K-Erhart-P-Nordlund-K--Ga-N/1/2003_GaN.tersoff). In this file, the **n** values of 'Ga Ga N', 'N Ga N', 'N N Ga', 'Ga N Ga' are set to **0.0**.
 
@@ -72,14 +72,14 @@ This difference in the setup of **n** doesn't affect the simulation results. It 
 # Ga-As
 The GaAs potential is taken from 
 
-Ref. 4: K. Albe, K. Nordlund, J. Nord, and A. Kuronen, *Phys. Rev. B* **66**, 035205(2002); DOI: [10.1103/PhysRevB.66.035205](https://doi.org/10.1103/physrevb.66.035205).
+Ref. 4: K. Albe, K. Nordlund, J. Nord, and A. Kuronen, Modeling of compound semiconductors: Analytical bond-order potential for Ga, As, and GaAs, *Phys. Rev. B* **66**, 035205(2002); DOI: [10.1103/PhysRevB.66.035205](https://doi.org/10.1103/physrevb.66.035205).
 
 Source 1: [provided by openKIM](https://www.ctcms.nist.gov/potentials/Download/2002--Albe-K-Nordlund-K-Nord-J-Kuronen-A--Ga-As/1/2002_GaAs.tersoff). In this file, the **n** values of 'Ga Ga As', 'As Ga As', 'As As Ga', 'Ga As Ga' are set to **0.0**.
 
 # Zn-O
 The ZnO potential is taken from 
 
-Ref. 5: P. Erhart, N. Juslin, O. Goy, K. Nordlund, R. M&#252;ller, and K. Albe, *J. Phys.: Condens. Matter* **18** (2006)6585-6605; DOI: [10.1088/0953-8984/18/29/003](http://dx.doi.org/10.1088/0953-8984/18/29/003).
+Ref. 5: P. Erhart, N. Juslin, O. Goy, K. Nordlund, R. M&#252;ller, and K. Albe, Analytic bond-order potential for atomistic simulations of zinc oxide, *J. Phys.: Condens. Matter* **18** (2006)6585-6605; DOI: [10.1088/0953-8984/18/29/003](http://dx.doi.org/10.1088/0953-8984/18/29/003).
 
 Source 1: [provided by openKIM](https://openkim.org/files/MO_616776018688_002/Tersoff_ErhartJuslinGoy_2006_ZnO.params). In this file, the **n** values of 'Zn Zn O', 'O Zn O', 'O O Zn', 'Zn O Zn' are set to **0.0**.
 
@@ -88,22 +88,22 @@ Source 1: [provided by openKIM](https://openkim.org/files/MO_616776018688_002/Te
 # Au
 The Au potential is taken from 
 
-Ref. 6: M. Backman, N. Juslin, and K. Nordlund, *Eur. Phys. J. B* **85**(2012)317; DOI: [10.1140/epjb/e2012-30429-y](http://dx.doi.org/10.1140/epjb/e2012-30429-y).
+Ref. 6: M. Backman, N. Juslin, and K. Nordlund, Bond order potential for gold, *Eur. Phys. J. B* **85**(2012)317; DOI: [10.1140/epjb/e2012-30429-y](http://dx.doi.org/10.1140/epjb/e2012-30429-y).
 
 # Pt-C
 The PtC potential is taken from 
 
-Ref. 7: K. Albe, K. Nordlund, and R. S. Averback, *Phys. Rev. B* **65** (2002)195124; DOI: [10.1103/physrevb.65.195124](https://doi.org/10.1103/physrevb.65.195124).
+Ref. 7: K. Albe, K. Nordlund, and R. S. Averback, Modeling the metal-semiconductor interaction: Analytical bond-order potential for platinum-carbon, *Phys. Rev. B* **65** (2002)195124; DOI: [10.1103/physrevb.65.195124](https://doi.org/10.1103/physrevb.65.195124).
 
 # Ti-Al-C
 The Ti-Al-C potential for Ti<sub>3</sub>AlC<sub>2</sub> MAX Phase and Ti-Si-C poential for Ti<sub>3</sub>SiC<sub>2</sub> MAX Phase are taken from 
 
-Ref. 8: G. Plummer and G. J. Tucker, *Phys. Rev. B* **100** (2019)214114; DOI: [10.1103/PhysRevB.100.214114](https://doi.org/10.1103/PhysRevB.100.214114).
+Ref. 8: G. Plummer and G. J. Tucker, Bond-order potentials for the Ti~3~AlC~2~ and Ti~3~SiC~2~ MAX phases, *Phys. Rev. B* **100** (2019)214114; DOI: [10.1103/PhysRevB.100.214114](https://doi.org/10.1103/PhysRevB.100.214114).
 
 # Be-O
 The Be-O potential is taken from 
 
-Ref. 9: J. Byggm&#228;star, E. A. Hodille, Y. Ferro, and K. Nordlund, *J. Phys.: Condens. Matter*, **30**, 135001(2018); DOI: [10.1088/1361-648X/aaafb3](https://doi.org/10.1088/1361-648X/aaafb3).
+Ref. 9: J. Byggm&#228;star, E. A. Hodille, Y. Ferro, and K. Nordlund, Analytical bond order potential for simulations of BeO 1D and 2D nanostructures and plasma-surface interactions, *J. Phys.: Condens. Matter*, **30**, 135001(2018); DOI: [10.1088/1361-648X/aaafb3](https://doi.org/10.1088/1361-648X/aaafb3).
 
 To describe repulsive short-range interactions more accurately,  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential V<sub>ZBL</sub> (r<sub>ij</sub>) is used jointly with the original potential V<sub>ij</sub>.
 
@@ -120,7 +120,7 @@ F(r<sub>ij</sub>) is Fermi function, i.e., 1/[1+exp(-b<sub>f</sub> (r<sub>ij</su
 # Be-C
 The Be-C potential is taken from 
 
-Ref. 10: C. Bj&#246;rkas, N. Juslin, H. Timko, K. V&#246;rtler, K. Nordlund, K. Henriksson, and P. Erhart, *J. Phys.: Condens. Matter*, **21**, 445002(2009); DOI: [10.1088/0953-8984/21/44/445002](http://dx.doi.org/10.1088/0953-8984/21/44/445002).
+Ref. 10: C. Bj&#246;rkas, N. Juslin, H. Timko, K. V&#246;rtler, K. Nordlund, K. Henriksson, and P. Erhart, Interatomic potentials for the Be-C-H system, *J. Phys.: Condens. Matter*, **21**, 445002(2009); DOI: [10.1088/0953-8984/21/44/445002](http://dx.doi.org/10.1088/0953-8984/21/44/445002).
 
 To describe repulsive short-range interactions more accurately,  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential V<sub>ZBL</sub> (r<sub>ij</sub>) is used jointly with the original potential V<sub>ij</sub>.
 
@@ -136,7 +136,7 @@ F(r<sub>ij</sub>) is Fermi function, i.e., 1/[1+exp(-b<sub>f</sub> (r<sub>ij</su
 # W-N & W
 The W-N potential is taken from 
 
-Ref. 11:  J. Polvi, K. Heinola, and K. Nordlund, *Modelling Simul. Mater. Sci. Eng.*, **24**, 065007(2016); DOI: [10.1088/0965-0393/24/6/065007](http://dx.doi.org/10.1088/0965-0393/24/6/065007).
+Ref. 11:  J. Polvi, K. Heinola, and K. Nordlund, An interatomic potential for W–N interactions, *Modelling Simul. Mater. Sci. Eng.*, **24**, 065007(2016); DOI: [10.1088/0965-0393/24/6/065007](http://dx.doi.org/10.1088/0965-0393/24/6/065007).
 
 To describe repulsive short-range interactions more accurately,  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential V<sub>ZBL</sub> (r<sub>ij</sub>) is used jointly with the original potential V<sub>ij</sub>.
 
@@ -151,13 +151,13 @@ F(r<sub>ij</sub>) is Fermi function, i.e., 1/[1+exp(-b<sub>f</sub> (r<sub>ij</su
 
 The parameters for W-W are taken from 
 
-Ref. 12: T. Ahlgren, K. Heinola, N. Juslin, and A. Kuronen, *J. Appl. Phys.* **107**, 033516(2010); DOI:[10.1063/1.3298466](http://dx.doi.org/10.1063/1.3298466).
+Ref. 12: T. Ahlgren, K. Heinola, N. Juslin, and A. Kuronen, Bond-order potential for point and extended defect simulations in tungsten, *J. Appl. Phys.* **107**, 033516(2010); DOI:[10.1063/1.3298466](http://dx.doi.org/10.1063/1.3298466).
 
 
 # Be-W
 The Be-W potential is taken from 
 
-Ref. 13: C. Bj&#246;rkas, K. O. E. Henriksson, M. Probst, and K. Nordlund, *J. Phys.: Condens. Matter*, **22**, 352206(2010); DOI: [10.1088/0953-8984/22/35/352206](http://dx.doi.org/10.1088/0953-8984/22/35/352206).
+Ref. 13: C. Bj&#246;rkas, K. O. E. Henriksson, M. Probst, and K. Nordlund, A Be–W interatomic potential, *J. Phys.: Condens. Matter*, **22**, 352206(2010); DOI: [10.1088/0953-8984/22/35/352206](http://dx.doi.org/10.1088/0953-8984/22/35/352206).
 
 To describe repulsive short-range interactions more accurately,  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential V<sub>ZBL</sub> (r<sub>ij</sub>) is used jointly with the original potential V<sub>ij</sub>.
 
@@ -173,14 +173,30 @@ F(r<sub>ij</sub>) is Fermi function, i.e., 1/[1+exp(-b<sub>f</sub> (r<sub>ij</su
 # Fe
 The Fe potential is taken from 
 
-Ref. 14:  M. M&#252;ller, P. Erhart and K. Albe, *J. Phys.: Condens. Matter*, **19**, 326220(2007); DOI: [10.1088/0953-8984/19/32/326220](http://dx.doi.org/10.1088/0953-8984/19/32/326220).
+Ref. 14:  M. M&#252;ller, P. Erhart and K. Albe, Analytic bond-order potential for bcc and fcc iron-comparison with established embedded-atom method potentials, *J. Phys.: Condens. Matter*, **19**, 326220(2007); DOI: [10.1088/0953-8984/19/32/326220](http://dx.doi.org/10.1088/0953-8984/19/32/326220).
 
 # Mo-Er
 The Mo-Er potential is taken from 
 
-Ref. 15:  Q. Q. Sun, T. Yang, L. Yang, S. M. Peng, X. G. Long, X. S. Zhou, X. T. Zu, and F. Gao, *Modelling Simul. Mater. Sci. Eng.*, **24**, 045018(2016); DOI: [10.1088/0965-0393/24/4/045018](http://dx.doi.org/10.1088/0965-0393/24/4/045018).
+Ref. 15:  Q. Q. Sun, T. Yang, L. Yang, S. M. Peng, X. G. Long, X. S. Zhou, X. T. Zu, and F. Gao, Analytical interactomic potential for a molybdenum–erbium system, *Modelling Simul. Mater. Sci. Eng.*, **24**, 045018(2016); DOI: [10.1088/0965-0393/24/4/045018](http://dx.doi.org/10.1088/0965-0393/24/4/045018).
 
 # Si & Ge
 The Si and Ge potentials are taken from 
 
 Ref. 16:  Brian Andrew Gillespie, *Bond Order Potentials for Group IV Semiconductors*, University of Virginia, 2009; URL: [https://www2.virginia.edu/ms/research/wadley/Thesis/BGillespiePhD.pdf](https://www2.virginia.edu/ms/research/wadley/Thesis/BGillespiePhD.pdf).
+
+# Fe-O
+The Fe-O potential is taken from 
+
+Ref. 17: J. Byggm&#228;star, M. Nagel, K. Albe, K. O. E. Henriksson and K. Nordlund, Analytical interatomic bond-order potential for simulations of oxygen defects in iron, *J. Phys.: Condens. Matter*, **31**, 215401(2019); DOI: [10.1088/1361-648X/ab0931](https://doi.org/10.1088/1361-648X/ab0931).
+
+To describe repulsive short-range interactions more accurately,  the universal repulsive Ziegler-Biersack-Littmark (ZBL) potential V<sub>ZBL</sub> (r<sub>ij</sub>) is used jointly with the original potential V<sub>ij</sub>.
+
+V'<sub>ij</sub> = F(r<sub>ij</sub>) V<sub>ij</sub> + [1-F(r<sub>ij</sub>)] V<sub>ZBL</sub>
+
+F(r<sub>ij</sub>) is Fermi function, i.e., 1/[1+exp(-b<sub>f</sub> (r<sub>ij</sub> -r<sub>f</sub>))]
+
+|  Parameters   | Fe-Fe | O-O  | Fe-O |
+| :-----------: | :---: | :--: | :--: |
+| b<sub>f</sub> | 2.9   | 12.0 | 10.0 |
+| r<sub>f</sub> | 0.95  | 0.5  | 1.0  |
