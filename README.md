@@ -24,6 +24,29 @@ From the parameters $r_0$, $D_{0}$, $S$, $\beta$, $\alpha$, $\omega$, and $h$ gi
 $\lambda_{1}   =   \beta\sqrt{2S}$,  $\lambda_{2}  =  \beta\sqrt{2/S}$,  $A=\frac{D_{0}}{S-1}\exp(\lambda_{1}r_{0})$, $B = \frac{SD_{0}}{S-1}\exp(\lambda_{2}r_{0})$, $\lambda_{3}  =  \alpha$ with $m=1$,  $\cos\theta_{0}  =  -h $, $\gamma = \omega\gamma$, 
 where $n$ = 1, $\beta$ = 1, $m$ = 1 in Tersoff_1 format of LAMMPS.
 
+##  Data format in Tersoff file with a“.tersoff” suffix
+
+ Lines that are not blank or comments (starting with #) define parameters for a triplet of elements.  The parameters in a single entry correspond to coefficients in the formula above:
+
+| Tersoff_1 | element 1                                  | element 2                          | element 3                                               | $m$ | $\gamma$       | $\lambda_{3}$  | $c$ | $d$ | $\cos\theta_{0}$         | $n$ | $\beta$ | $\lambda_{2}$   | $B$                                        | $R$          | $D$          | $\lambda_{1}$    | $A$                                       |
+| --------- | ------------------------------------------ | ---------------------------------- | ------------------------------------------------------- | ----- | ---------------- | ---------------- | ----- | ----- | -------------------------- | ----- | --------- | ------------------- | -------------------------------------------- | -------------- | -------------- | ------------------ | ------------------------------------------- |
+| Note      | the center of atom in a 3-body interaction | the atom bonded to the center atom | the atom influencing the 1-2 bond in a bond-order sense |       |                  | 1/distance units |       |       | can be a value < -1 or > 1 |       |           | 1/distance units    | energy units                                 | distance units | distance units | 1/distance units   | energy units                                |
+|           |                                            |                                    |                                                         | 1     | $\omega\gamma$ | $\alpha$       |       |       | $-h$                     | 1     | 1         | $\beta\sqrt{2/S}$ | $\frac{SD_{0}}{S-1}\exp(\lambda_{2}r_{0})$ | $R$          | $D$          | $\beta\sqrt{2S}$ | $\frac{D_{0}}{S-1}\exp(\lambda_{1}r_{0})$ |
+
+* The $n$, $\beta$, $\lambda_2$, $B$, $\lambda_1$, and $A$ parameters are only used for two-body interactions. 
+* The $m$, $\gamma$, $\lambda_3$, $c$, $d$, and $\cos\theta_0$ parameters are only used for three-body interactions. 
+*  The $R$ and $D$ parameters are used for both two-body and three-body interactions.
+* The non-annotated parameters are unitless.  
+* The value of $m$ must be 3 or 1.
+* The Tersoff potential file must contain entries for all the elements listed in the pair_coeff command.  It can also contain entries for additional elements not being used in a particular simulation; LAMMPS ignores those entries.
+* For a **single-element** simulation, only a **single entry** is required (e.g. SiSiSi).  For a **two-element** simulation, the file must contain **8 entries** (for SiSiSi, SiSiC, SiCSi, SiCC, CSiSi, CSiC, CCSi, CCC), that specify Tersoff parameters for all permutations of the two elements interacting in three-body configurations.  Thus for **3 elements**, **27 entries** would be required, etc.
+* The first element in the entry is the center atom in a three-body interaction and it is bonded to the second atom and the bond is influenced by the third atom.  
+  * Thus an entry for SiCC means Si bonded to a C with another C atom influencing the bond.  
+  * Thus three-body parameters for SiCSi and SiSiC entries will not, in general, be the same.  The parameters used for the two-body interaction come from the entry where the second element is repeated. 
+  * Thus the two-body parameters for Si interacting with C, comes from the SiCC entry.
+
+* The parameters used for a particular three-body interaction come from the entry with the corresponding three elements.  The parameters used only for two-body interactions ( $n$, $\beta$, $\lambda_{2}$ , $B$, $\lambda_{1}$, and $A$) in entries whose second and third element are different (e.g. SiCSi) are not used for anything and can be set to 0.0 if desired.
+
 
 # W-C
 The WC potential is taken from 
